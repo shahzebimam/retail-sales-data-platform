@@ -1,6 +1,6 @@
 # Retail Sales ETL Pipeline
 
-PySpark ETL pipeline developed using Databricks Free Edition for processing retail sales data.
+PySpark ETL pipeline developed and tested using Databricks Free Edition for processing retail sales data.
 
 ## Overview
 
@@ -13,7 +13,7 @@ The pipeline processes sales and product reference data and performs:
 - Currency conversion using REST API
 - Valid and rejected record separation
 - Error and audit logging
-- Data quality validation
+- Final data quality validation
 
 ## Technology
 
@@ -85,11 +85,11 @@ The pipeline generates:
 
 The `sql` folder contains definitions for:
 
-- `fact_sales`
-- `currency_conversion_log`
-- `etl_error_log`
-- `etl_run_log`
-- `rejected_sales`
+- `Target Schema.sql`
+- `Currency Conversion Log.sql`
+- `ETL Error Log.sql`
+- `ETL Run Log.sql`
+- `Rejected Sales.sql`
 
 These scripts represent the target database schema and supporting logging tables.
 
@@ -107,11 +107,11 @@ retail-sales-data-platform/
 │   ├── high_level_architecture.png
 │   └── low_level_architecture.png
 ├── notebooks/
-│   └── Retail_Sales_ETL_Pipeline.ipynb
+│   └── Retail Sales ETL Pipeline.ipynb
 ├── sql/
-│   ├── 01_target_schema
-│   ├── 02_currency_conversion_log
-│   ├── 03_etl_error_log
-│   ├── 04_etl_run_log
-│   └── 05_rejected_sales
+│   ├── Target Schema.sql
+│   ├── Currency Conversion Log.sql
+│   ├── ETL Error Log.sql
+│   ├── ETL Run Log.sql
+│   └── Rejected Sales.sql
 └── README.md
